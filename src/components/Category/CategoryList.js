@@ -14,7 +14,7 @@ const CategoryList = ({categories}) => {
 
                 return (
                   <Link to = {`/meal/category/${title}`} className = "category-itm align-center justify-center" key = {id}>
-                    <div className='category-itm-img h-100 w-100 flex align-center justify-center'>
+                    <div className='category-itm-img sm:h-100 h-60 sm:w-100 w-60 flex align-center justify-center'>
                       <img src = {thumbnail} alt = {title} />
                       <div className='category-itm-title bg-orange'>
                         <h3 className='text-white fs-11 fw-6 ls-1 text-uppercase'>{title}</h3>
