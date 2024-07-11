@@ -54,9 +54,9 @@ const MealSingle = ({ meal }) => {
                     </span>
                   </div>
 
-                  <div className="source flex wrap">
-                    <span className="fw-7">Source: &nbsp;</span>
-                    <a href={meal.source} className="source_link">
+                  <div className="source flex wrap align-centeroca">
+                    <span className="source-text">Source: &nbsp;</span>
+                    <a href={meal.source} className="source_link ">
                       {meal.source
                         ? (meal?.source).substring(0, 40) + "..."
                         : "Not found"}

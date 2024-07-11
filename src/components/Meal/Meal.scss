@@ -21,7 +21,6 @@
       position: relative;
       border-radius: 4px 4px 0 0;
       overflow: hidden;
-      border: 1px solid rgba(0, 0, 0, 0.1);
     }
     &-cat {
       position: absolute;
@@ -91,6 +90,9 @@
       }
       .ingredients {
         background-color: $clr-orange;
+        width: 300px;
+
+        padding: 2rem;
 
         h6 {
           margin-right: 12px;
@@ -131,7 +133,6 @@
               border-radius: 50%;
               font-size: 12px;
               margin-right: 8px;
-              border: 0.5px solid white;
             }
           }
         }
@@ -162,7 +163,7 @@
         margin-top: 1rem;
         background-color: rgba(0, 0, 0, 0.01);
         padding: 2rem;
-        border: 1px solid rgba(0, 0, 0, 0.1);
+
         li {
           margin-bottom: 8px;
           .li-icon {
@@ -205,4 +206,17 @@
   display: inline-block;
   max-width: 320px;
   width: 100%;
+}
+.meal-itm-img {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.meal-itm-img:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
